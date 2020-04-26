@@ -14,8 +14,8 @@ import javax.validation.constraints.NotNull;
 public class Product
 {
 	@Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
+	@GeneratedValue(strategy= GenerationType.IDENTITY)
+	private Long id;
 
 	@Column(name="CATEGORY")
 	@NotEmpty(message = "Please provide a category")
@@ -25,7 +25,7 @@ public class Product
 	@NotEmpty(message = "Please provide a brand")
 	private String brand;
 	    
-    @Column(name="PRODUCT_NAME")
+	@Column(name="PRODUCT_NAME")
     @NotEmpty(message = "Please provide a product Name")
     private String productName;
     
@@ -35,7 +35,7 @@ public class Product
     
     @Column(name="CURRENCY_CODE")
     @NotEmpty(message = "Please provide a currency code")
-	private String currencyCode;
+    private String currencyCode;
 
 	public Long getId() {
 		return id;
